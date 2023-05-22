@@ -17,6 +17,13 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
+bootJar{
+	archivesBaseName='jenkinsdemo'
+	archiveFileName='jenkinsdemo.jar'
+	archiveVersion='0.0.0'
+
+}
+
 tasks.named('test') {
 	useJUnitPlatform()
 }
