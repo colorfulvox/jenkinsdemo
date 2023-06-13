@@ -43,4 +43,4 @@ jobs:
             sudo docker rm ${{ secrets.DOCKER_NAME }}
             sudo docker image rm ${{ secrets.DOCKER_REPO }}
             sudo docker pull ${{ secrets.DOCKER_REPO }}
-            sudo docker run -d -p 80:8080 --name ${{ secrets.DOCKER_NAME }} ${{ secrets.DOCKER_REPO }}
+            sudo docker run -d -p 8080:8080 --name ${{ secrets.DOCKER_NAME }} ${{ secrets.DOCKER_REPO }}
