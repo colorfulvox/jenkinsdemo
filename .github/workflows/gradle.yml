@@ -39,7 +39,7 @@ jobs:
           key: ${{ secrets.KEY }}
           port: 22
           script: |
-            sudo docker  ${{ secrets.DOCKER_NAME }}
+            sudo docker  stop ${{ secrets.DOCKER_NAME }}
             sudo docker rm ${{ secrets.DOCKER_NAME }}
             sudo docker image rm ${{ secrets.DOCKER_REPO }}
             sudo docker pull ${{ secrets.DOCKER_REPO }}
