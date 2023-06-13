@@ -27,3 +27,8 @@ jobs:
         with:
           java-version: "17"
           distribution: "temurin"
+
+      - name: Grant execute permisson for gradlew
+        run: chmod +x gradlew
+      - name: Build with Gradle
+        run: ./gradlew bootJar
