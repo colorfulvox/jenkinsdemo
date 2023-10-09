@@ -18,8 +18,8 @@ dependencies {
 }
 
 bootJar{
-	archivesBaseName='githubactiondemo'
-	archiveFileName='githubactiondemo.jar'
+	archivesBaseName='jenkinsdemo'
+	archiveFileName='jenkinsdemo.jar'
 	archiveVersion='0.0.0'
 
 }
